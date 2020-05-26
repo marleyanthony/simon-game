@@ -8,11 +8,12 @@ let userClickedPattern = [];
 let started = false;
 let level = 0;
 
-$(document).on('keydown', function () {
+$('#start-btn').on('click', function () {
   if (started === false) {
     nextSequence();
     $('#level-title').text('Level ' + level);
     started = true;
+    $('#start-btn').hide();
   }
 });
 
@@ -54,7 +55,9 @@ function checkAnswer(currentLevel) {
       $('body').removeClass('game-over');
     }, 200);
 
-    $('#level-title').text('Game over, Press Any Key to Restart!');
+    $('#start-btn').show();
+
+    $('#level-title').text('Game over, Press Start to Restart!');
     startOver();
   }
 }
