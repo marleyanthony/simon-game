@@ -25,6 +25,18 @@ body {
   border-radius: 20%;
 }
 
+#start-btn {
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  background-color: green;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  letter-spacing: 5px;
+}
+
 .game-over {
   background-color: red;
   opacity: 0.8;
